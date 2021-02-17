@@ -35,10 +35,12 @@ async function FetchCountryInf(input) {
 }
 function invalidCountry() {
     const errorDisplay = document.getElementById("errorDisplay")
-    errorDisplay.textContent = "This country is not in our database yet, try again";
+    errorDisplay.textContent = "This country is not in our database yet or you spelled it wrong, try again!";
     const imageElement = document.getElementById("flagCountry");
     imageElement.src = "";
     imageElement.alt = "";
+    const CountryDisplayname = document.getElementById("CountryDisplayname");
+    CountryDisplayname.textContent = " ";
     const countryGEO = document.getElementById("countryGEO");
     countryGEO.textContent = "";
     const countryINF = document.getElementById("countryINF");

@@ -2,10 +2,14 @@
 * {
     box-sizing: border-box;
     background-color: #11535A;
-    margin-top: 1px;
+    margin-top: 0.2px;
+    font-family: "Berlin Sans FB";
     margin-left: 30px;
     color: darkgray;
 
+}
+#CountryDisplayname {
+    color: darkgoldenrod;
 }
 #countryDisplay {
     margin-top: 12px;
