@@ -1,22 +1,42 @@
+
 * {
     box-sizing: border-box;
+    background-color: #11535A;
+    margin-top: 1px;
+    margin-left: 30px;
+    color: darkgray;
+
+}
+#countryDisplay {
+    margin-top: 12px;
+}
+#flagCountry {
+    height: 40px;
+    length: 40px;
+
 }
 
+#countryINF, #countryGEO, #currenciesString, #langString {
+    font-size: 14px;
+
+    }
+.fa-search {
+    background-color: red;
+}
 /* Style the search field */
-form.example input[type=text] {
+.example input {
     padding: 10px;
     font-size: 17px;
     border: 1px solid grey;
-    float: left;
     width: 80%;
-    background: #f1f1f1;
+    background: deepskyblue;
 }
 /* Style the submit button */
-form.example button {
+.example button {
     float: left;
     width: 20%;
     padding: 10px;
-    background: #2196F3;
+    background: yellow;
     color: white;
     font-size: 17px;
     border: 1px solid grey;
