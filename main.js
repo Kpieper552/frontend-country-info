@@ -66,9 +66,9 @@ function countryDisplay(countryData) {
     const countryGEO = document.getElementById("countryGEO");
     countryGEO.textContent = countryData.name + " is situated in "+ countryData.subregion + ".";
     const countryINF = document.getElementById("countryINF");
-    countryINF.textContent = "The country has a population of " + countryData.population + " people.";
+    countryINF.textContent = "The country has a population of " + (countryData.population/1000000).toFixed(2) + " million people.";
     const currenciesString = document.getElementById("currenciesString");
-    currenciesString.textContent = "The capital is " + countryData.capital + "." + currenciesSR(countryData.currencies) ;
+    currenciesString.textContent = "The capital is " + countryData.capital + "." + currenciesSR(countryData.currencies);
     const langString = document.getElementById("langString");
     langString.textContent = languagesMore(countryData.languages) ;
 }
