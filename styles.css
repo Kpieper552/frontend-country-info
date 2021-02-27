@@ -1,28 +1,36 @@
 
 * {
     box-sizing: border-box;
-    background-color: #11535A;
+    background-color: #0b7dda;
     margin-top: 50px;
     font-family: "Berlin Sans FB";
     margin-left: 30px;
-    color: darkgray;
+    color: darkgrey;
+}
 
-}
-#CountryDisplayname {
-    color: darkgoldenrod;
-}
-#countryDisplay {
-    margin-top: 12px;
-}
 #flagCountry {
     height: 40px;
     length: 40px;
 }
 
-#countryINF, #countryGEO, #currenciesString, #langString {
+#countrydisplay {
     font-size: 14px;
-    margin-top: 60px;
+}
+#CountryDisplayname {
+    margin-top: 80px;
+    color: goldenrod;
+}
+
+#countryGEO, #countryINF, #langString, #currenciesString, #errorDisplay {
+    display: inline-block;
+    margin-left: 35px;
+    margin-top: 0px;
+    color: antiquewhite;
+    border-width: 2px;
+    width: 500px;
+
     }
+
 .fa-search {
     background-color: red;
 }

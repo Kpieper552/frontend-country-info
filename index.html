@@ -12,15 +12,16 @@
 <button id="searchBT" type="click"><i class="fa fa-search"></i>search</button>
 <p>Let's find Country information</p>
 <div id="countryDisplay">
-<img id="flagCountry" src="" alt="">
+    <div id="errorBox">
+        <p id="errorDisplay"></p>
+    </div>
+    <img id="flagCountry" src="" alt="">
 <h1 id="CountryDisplayname"></h1>
     <p id="countryGEO"></p>
     <p id="countryINF"></p>
     <p id="currenciesString"></p>
     <p id="langString"></p>
-    <div id="errorBox">
-        <p id="errorDisplay"></p>
-    </div>
+
 </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
