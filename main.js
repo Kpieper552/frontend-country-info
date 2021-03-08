@@ -1,7 +1,3 @@
-//searchBT id search button in index.html
-//const axios = require('axios');
-// input field met id inputCountry in index.html
-// display country id countryDisplay in index.html
 
 const inputCountry = document.getElementById("inputCountry");
  inputCountry.addEventListener('keypress', (e) => {
@@ -16,9 +12,6 @@ searchbutton.addEventListener("click", () => {
     FetchCountryInf(inputCountry.value);
         inputCountry.value = "";
 });
-
-//const countryDisplay = document.getElementById("countryDisplay");
-
 
 async function FetchCountryInf(input) {
 
@@ -50,13 +43,6 @@ function invalidCountry() {
     const langString = document.getElementById("langString");
     langString.textContent = " ";
 }
-//console.log(countryData)
-//console.log("dit is de image url: ", flag);
-//console.log(countryGEO);
-//console.log(countryINF);
-//console.log(currenciesString);
-//console.log("dit is taal :", langString);
-// log currenciesString en languagesString komt eruit als undefined? Waarom is dit?
 
 function countryDisplay(countryData) {
     const errorDisplay = document.getElementById("errorDisplay");
